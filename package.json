@@ -1,0 +1,38 @@
+{
+  "name": "mchatebot_lite",
+  "version": "1.0.0",
+  "author": "I-love-minecraft#2437",
+  "main": "McHateBot.ts",
+  "scripts": {
+    "build": "cmd /C scripts\\build.bat",
+    "start": "npx ts-node McHateBot.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "minecraft-data": "^3.89.0",
+    "mineflayer": "^4.29.0",
+    "prismarine-block": "^1.21.0",
+    "prismarine-item": "^1.16.0",
+    "prismarine-windows": "^2.9.0",
+    "silly-datetime": "^0.1.2",
+    "vec3": "^0.1.10"
+  },
+  "bin": "index.js",
+  "engines": {
+    "node": ">= 20"
+  },
+  "pkg": {
+    "assets": [
+      "./out/commands/communicate/commands/**/*.js",
+      "./utils",
+      "./models",
+      ".env"
+    ],
+    "outputPath": "./exe"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

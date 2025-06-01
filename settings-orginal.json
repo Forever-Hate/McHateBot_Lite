@@ -1,0 +1,6 @@
+{
+  "console_bot_command_prefix": "!",
+  "auto_reconnect": true,
+  "reconnect_delay": 10,
+  "max_reconnect_attempts": -1
+}
